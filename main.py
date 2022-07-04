@@ -88,7 +88,7 @@ class Comment(Base, db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
 
 
-# db.create_all()
+db.create_all()
 
 
 # Esto es un decorador para que solo el admin pueda agregar posts, editarlos o borrarlos

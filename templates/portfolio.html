@@ -1,0 +1,63 @@
+{% include "header.html" %}
+
+<!-- Page Header -->
+<div class="container-fluid" id="header">
+    <h1 class="title">My Projects</h1>
+    <img class="wall-img" src="{{ url_for('static', filename='img/portfolio-bg.jpg') }}" alt="wall-pic">
+    <p class="subheading">Check out what I've been up to.</p>
+</div>
+
+
+<!-- Main Content -->
+<div class="container-fluid" id="content">
+    <div class="row">
+        <div class="main-container d-flex flex-column flex-md-row">
+            <div class="col-lg-6 col-md-6">
+                <a href="{{ url_for('about') }}"><img class="project-img"
+                                                      src='{{ url_for("static", filename="img/morse.png")}}'
+                                                      alt="project-1-img"></a>
+            </div>
+            <div class="col-lg-4 col-md-6" id="text-1">
+                <h2>Morse Code Converter</h2>
+                <p>
+                    This app can translate <strong>morse to text</strong> AND <strong>text to morse</strong>. When
+                    translating text to morse, it sounds it out too!.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex  flex-column flex-md-row-reverse">
+            <div class="col-lg-6 col-md-6">
+                <a href="#"><img class="project-img" src='{{ url_for("static", filename="img/wordle.png")}}'
+                                 alt="project-2-img"></a>
+            </div>
+            <div class="col-lg-4 col-md-6" id="text-2">
+                <h2>Wordle Game Statistics</h2>
+                <p>
+                    Do you like playing the <strong>Wordle Game</strong>? With this app, you can keep track of your
+                    progress, as well as your friends'. It even graphs the results so you can see who is winning!
+                </p>
+            </div>
+        </div>
+
+
+        <div class="main-container d-flex  flex-column flex-md-row">
+            <div class="col-lg-6 col-md-6">
+                <a href="{{ url_for('portfolio') }}"><img class="project-img"
+                                                          src='{{ url_for("static", filename="img/portfolio.png")}}'
+                                                          alt="project-3-img"></a>
+            </div>
+            <div class="col-lg-4 col-md-6" id="text-3">
+                <h2>My portfolio</h2>
+                <p>
+                    Check out some projects I did and tell me which one is your favourite.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<hr>
+
+{% include "footer.html" %}

@@ -1,55 +1,68 @@
 {% include "header.html" %}
 
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1470092306007-055b6797ca72?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Pablo's Blog</h1>
-            <span class="subheading">A collection of random musings.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<!-- Page Header -->
+<div class="container-fluid" id="header">
+    <h1 class="title">I am Pablo</h1>
+    <img class="wall-img" src="{{ url_for('static', filename='img/main-bg.jpg') }}" alt="wall-pic">
+    <figure>
+        <blockquote class="blockquote">
+            <p>“Don’t worry about failure; you only have to be right once.”</p>
+        </blockquote>
+        <p class="blockquote-footer">
+            Drew Houston, founder and CEO of Dropbox
+        </p>
+    </figure>
+</div>
 
-  <!-- Main Content -->
-  <div class="container">
+
+<!-- Main Content -->
+<div class="container-fluid" id="content">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        {% for post in all_posts %}
-        <div class="post-preview">
-          <a href="{{ url_for('show_post', post_id=post.id) }}">
-            <h2 class="post-title">
-              {{post.title}}
-            </h2>
-            <h3 class="post-subtitle">
-              {{post.subtitle}}
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">{{post.author.name}}</a>
-            on {{post.date}}
-          
-            <a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
-          
-          </p>
+
+        <div class="main-container d-flex flex-column flex-md-row">
+            <div class="col-lg-6 col-md-6">
+                <a href="{{ url_for('about') }}"><img class="index-img my-auto" id="profile-img"
+                                                      src='{{ url_for("static", filename="img/profile.jpg")}}'
+                                                      alt="profile-img"></a>
+            </div>
+            <div class="col-lg-4 col-md-6" id="text-1">
+                <h2>What's up?</h2>
+                <p>
+                    I am an aerospace engineer 🚀 with a passion for coding 🖳.
+                </p>
+            </div>
         </div>
-        <hr>
-        {% endfor %}
+
+        <div class="main-container d-flex  flex-column flex-md-row-reverse">
+            <div class="col-lg-6 col-md-6">
+                <a href="{{ url_for('static', filename='files/cv-pablo_uboldi_v2.pdf') }}" target="_blank" rel="noreferrer"><img class="index-img  my-auto" src='{{ url_for("static", filename="img/cv.png")}}' alt="cv-img"></a>
+            </div>
+            <div class="col-lg-4 col-md-6" id="text-2">
+                <h2>My resume</h2>
+                <p>
+                    Hey! Do you think I could be a good acquisition to your business? Check out my CV!
+                </p>
+            </div>
+        </div>
 
 
-        <!-- New Post -->
-        <div class="clearfix">
-          {% if logged_user_id == 1 %}
-          <a class="btn btn-primary float-right" href="{{url_for('add_new_post')}}">Create New Post</a>
-          {% endif %}
+        <div class="main-container d-flex  flex-column flex-md-row">
+            <div class="col-lg-6 col-md-6">
+                <a href="{{ url_for('portfolio') }}"><img class="index-img  my-auto"
+                                                          src='{{ url_for("static", filename="img/portfolio.png")}}'
+                                                          alt="portfolio-img"></a>
+            </div>
+            <div class="col-lg-4 col-md-6" id="text-3">
+                <h2>My portfolio</h2>
+                <p>
+                    Check out some projects I did and tell me which one is your favourite.
+                </p>
+            </div>
         </div>
-      </div>
+
+
     </div>
-  </div>
-  <hr>
+</div>
+<hr>
 
 {% include "footer.html" %}

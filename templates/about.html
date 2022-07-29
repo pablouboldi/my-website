@@ -1,31 +1,29 @@
 {% include "header.html" %}
 
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>About Me</h1>
-            <span class="subheading">This is what I do.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<!-- Page Header -->
+<div class="container-fluid" id="header">
+    <h1 class="title">About me</h1>
+    <img class="wall-img" src="{{ url_for('static', filename='img/about-bg.jpg') }}" alt="about pic">
+    <p class="subheading">This is who I am.</p>
+</div>
 
-  <!-- Main Content -->
-  <div class="container">
+<!-- Main Content -->
+<div class="container-fluid" id="content">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-      </div>
+        <div class="col-lg-6 col-md-10 mx-auto">
+            <p class="about-me">
+                I graduated from the National Technological University of Buenos Aires, and,
+                currently, I am training myself for becoming a full-stack developer.
+                In the field of engineering I have intermediate knowledge of programs such as
+                Wolfram Mathematica, SIMSCALE CFD, SolidWorks and Matlab.
+                On the programming side, I like to work on HTML, CSS, Bootstrap, Flask, RESTful
+                APIs, SQLite and
+                Data Science.
+            </p>
+        </div>
     </div>
-  </div>
+</div>
 
-  <hr>
+<hr>
 
-  {% include "footer.html" %}
+{% include "footer.html" %}

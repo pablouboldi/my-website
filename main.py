@@ -1,9 +1,5 @@
-from functools import wraps
 from flask import Flask, render_template, redirect, url_for, flash, abort
 from flask_bootstrap import Bootstrap
-from flask_ckeditor import CKEditor
-from datetime import date
-import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"  # os.environ.get("SECRET_KEY")
@@ -46,4 +42,3 @@ if __name__ == "__main__":
 # TODO 2: Revisar el esquema de colores
 # TODO 3: Ver si conviene agregar mas cosas en las distintas paginas porque se ve muy corta en un celular
 # TODO 4: Agregar informacion en la pagina "about"
-# TODO 5: Arreglar el emoji de la computadora en la pagina principal porque no se ve en los celulares

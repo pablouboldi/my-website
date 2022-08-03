@@ -39,6 +39,5 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 # TODO 1: Arreglar la navbar transparente porque en celular se mete sobre la imagen principal de la pagina
-# TODO 2: Revisar el esquema de colores
-# TODO 3: Ver si conviene agregar mas cosas en las distintas paginas porque se ve muy corta en un celular
-# TODO 4: Agregar informacion en la pagina "about"
+# TODO 2: Ver si conviene agregar mas cosas en las distintas paginas porque se ve muy corta en un celular
+# TODO 3: Agregar información en la pagina "about"

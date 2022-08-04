@@ -111,6 +111,11 @@ hr {
     padding-left: 140px;
 }
 
+.main-container p,
+.main-container h2 {
+    text-align: left;
+}
+
 .main-container img {
     width: 150px;
     margin-bottom: 50px;
@@ -120,9 +125,6 @@ hr {
     border-radius: 50%;
 }
 
-#text-1, #text-2, #text-3 {
-    text-align: left;
-}
 
 /* ---------------------------- about.html ---------------------------- */
 /* -------------------------------------------------------------------- */

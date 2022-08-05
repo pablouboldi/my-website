@@ -15,13 +15,11 @@ h2 {
     font-size: 2.5rem;
     font-family: Montserrat, sans-serif;
     font-weight: normal;
-    text-align: left;
 }
 
 p {
     font-size: 1.5rem;
     line-height: 1.5;
-    text-align: left;
 }
 
 h3 {
@@ -111,6 +109,14 @@ hr {
     margin-bottom: 75px;
     padding-right: 140px;
     padding-left: 140px;
+}
+
+.main-container h2 {
+    text-align: left;
+}
+
+.main-container p {
+    text-align: left;
 }
 
 .main-container img {

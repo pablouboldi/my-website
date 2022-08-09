@@ -1,0 +1,95 @@
+{% include "header.html" %}
+
+<!-- Page Header -->
+<div class="container-fluid" id="header">
+    <h1 class="title">My Projects</h1>
+    <img class="wall-img" src="{{ url_for('static', filename='img/portfolio-bg.jpg') }}" alt="wall-pic">
+    <p class="subheading">Check out what I've been up to.</p>
+</div>
+
+
+<!-- Main Content -->
+<div class="container-fluid" id="content">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project project-radius project-success">
+                    <div class="project-content">
+                        <h3 class="lead">
+                            Morse Code Converter
+                        </h3>
+                        <p>
+                            This app can translate <strong>morse to text</strong> AND <strong>text to morse</strong>.
+                            When translating text to morse, it sounds it out too!
+                        </p>
+                        <a href="https://github.com/pablouboldi/morse-text-converter" target="_blank"><img
+                            class="project-img"
+                            src='{{ url_for("static", filename="img/morse.png")}}'
+                            alt="project-1-img"
+                        ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project project-radius project-success">
+                    <div class="project-content">
+                        <h3 class="lead">
+                            Wordle Game Statistics
+                        </h3>
+                        <p>
+                            Do you like playing the <strong>Wordle Game</strong>? With this app, you can keep track of
+                            your progress, as well as your friends'.
+                        </p>
+                        <a href="https://github.com/pablouboldi/wordle-game-stats" target="_blank"><img
+                            class="project-img"
+                            src='{{ url_for("static", filename="img/wordle.png")}}'
+                            alt="project-2-img"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project project-radius project-success">
+                    <div class="project-content">
+                        <h3 class="lead">
+                            Text-Based Tic-Tac-Toe
+                        </h3>
+                        <p>
+                            This is a simple implementation of the famous <strong>tic-tac-toe</strong> game.
+                        </p>
+                        <a href="https://github.com/pablouboldi/tic-tac-toe" target="_blank"><img
+                            class="project-img"
+                            src='{{ url_for("static", filename="img/tic_tac_toe.png")}}'
+                            alt="project-3-img"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project project-radius project-success">
+                    <div class="project-content">
+                        <h3 class="lead">
+                            Watermark App
+                        </h3>
+                        <p>
+                            Do you wish to add your brand to your images? Now you can!
+                            This code inserts a <strong>watermark</strong> of your choosing to whichever image you like.
+                        </p>
+                        <a href="https://github.com/pablouboldi/watermark-img" target="_blank"><img
+                            class="project-img"
+                            src='{{ url_for("static", filename="img/watermark.png")}}'
+                            alt="project-4-img"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!--/row-->
+</div><!--/container -->
+
+
+<hr>
+
+{% include "footer.html" %}

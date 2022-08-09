@@ -16,7 +16,7 @@ def home():
 @app.route('/portfolio', methods=["GET", "POST"])
 def portfolio():
     return render_template(
-        'portfolio.html'
+        'portfolio_v2.html'
     )
 
 
@@ -38,6 +38,5 @@ def thanks():
 if __name__ == "__main__":
     app.run(debug=True)
 
-# TODO 1: Arreglar la navbar transparente porque en celular se mete sobre la imagen principal de la pagina
-# TODO 2: Ver si conviene agregar mas cosas en las distintas paginas porque se ve muy corta en un celular
-# TODO 3: Agregar información en la pagina "about"
+# TODO 1: Ver si conviene agregar mas cosas en las distintas paginas porque se ve muy corta en un celular
+# TODO 2: Agregar información en la pagina "about"

@@ -3,7 +3,6 @@
 <!-- Page Header -->
 <div class="container-fluid" id="header">
     <h1 class="title">I am Pablo</h1>
-    <img class="wall-img" src="{{ url_for('static', filename='img/main-bg.jpg') }}" alt="wall-pic">
     <figure>
         <blockquote class="blockquote">
             <p>“Don’t worry about failure; you only have to be right once.”</p>
@@ -12,6 +11,7 @@
             Drew Houston, founder and CEO of Dropbox
         </p>
     </figure>
+    <img class="wall-img" src="{{ url_for('static', filename='img/main-bg.jpg') }}" alt="wall-pic">
 </div>
 
 
@@ -35,7 +35,9 @@
 
         <div class="main-container d-flex  flex-column flex-md-row-reverse">
             <div class="col-lg-6 col-md-6">
-                <a href="{{ url_for('static', filename='files/cv-pablo_uboldi_v2.pdf') }}" target="_blank" rel="noreferrer"><img class="index-img  my-auto" src='{{ url_for("static", filename="img/cv.png")}}' alt="cv-img"></a>
+                <a href="{{ url_for('static', filename='files/cv-pablo_uboldi_v2.pdf') }}" target="_blank"
+                   rel="noreferrer"><img class="index-img  my-auto" src='{{ url_for("static", filename="img/cv.png")}}'
+                                         alt="cv-img"></a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <h2>My resume</h2>

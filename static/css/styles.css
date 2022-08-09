@@ -17,14 +17,14 @@ h2 {
     font-weight: normal;
 }
 
-p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
 h3 {
     color: #11999E;
     font-family: Montserrat, sans-serif;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 a {
@@ -45,10 +45,13 @@ hr {
 /* ---------------------------- Navbar ---------------------------- */
 
 .navbar {
+/*
     -webkit-box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.2);
     box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.2);
+*/
     font-size: 20px;
+    background-color: #DAEAF1;
 }
 
 .navbar-brand {
@@ -100,7 +103,7 @@ hr {
 
 #content {
     padding: 10% 2% 10%;
-    background-color: #BFD5DB;
+    background-color: #C6DCE4;
 }
 
 .main-container {
@@ -146,14 +149,57 @@ hr {
 /* ---------------------------- portfolio.html ---------------------------- */
 /* ------------------------------------------------------------------------ */
 
+.project {
+    min-height:550px;
+    height:auto;
+    background:#DAEAF1;
+    border:1px solid #ddd;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 15px 0;
+    overflow:hidden;
+}
+
+.project-radius{
+    border-radius:7px;
+}
+
+.project-img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.project-img:hover {
+    width: 160px;
+}
+
+.project-success {	border-color: #6E85B7; }
+
+.project-content {
+    padding: 20px;
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
 
 /* ---------------------------- Footer ---------------------------- */
 
 #footer{
-    background-color: #A2B5BB;
+    background-color: #FFE6E6;
 }
 
 .footer-container {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+.footer-container a{
+    color: #B2C8DF;
+}
+
+.footer-container a:hover{
+    color: #6E85B7;
+}
+
+

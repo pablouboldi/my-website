@@ -169,7 +169,7 @@ hr {
 }
 
 .project-img:hover {
-    width: 160px;
+    height: 160px;
 }
 
 .project-success {	border-color: #6E85B7; }

@@ -5,33 +5,68 @@ body {
     color: #576F72;
 }
 
+
+
 h1 {
     font-size: 7vw;
     margin: 0px auto 0px auto;
     font-family: Quicksand, sans-serif;
 }
+@media screen and (min-width: 1500px) {
+h1 {
+    font-size: 5vw;
+}
+}
+
+
+
+
+
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 4vw;
     font-family: Montserrat, sans-serif;
     font-weight: normal;
 }
+
 
 h3 {
     color: #11999E;
     font-family: Montserrat, sans-serif;
 }
 
-blockquote p{
-    font-size: 2vw;
+
+
+.subheading{
+    font-size: 2.5vw;
+}
+@media screen and (min-width: 1500px) {
+    .subheading{
+        font-size: 1.2vw;
+    }
 }
 
-.blockquote-footer{
-    font-size: 1.5vw;
+
+
+
+
+.author {
+    font-size: 1.7vw;
 }
+@media screen and (min-width: 1500px) {
+.author {
+    font-size: 0.8vw;
+}
+}
+
+
+
+
+
+
 
 p {
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     line-height: 1.5;
 }
 
@@ -53,13 +88,15 @@ hr {
 /* ---------------------------- Navbar ---------------------------- */
 
 .navbar {
-/*
-    -webkit-box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.2);
-    box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.2);
-*/
     font-size: 20px;
     background-color: #DAEAF1;
+}
+
+@media screen and (min-width: 1500px) {
+    .navbar {
+    font-size: 20px;
+    background-color: #DAEAF1;
+}
 }
 
 .navbar-brand img{
@@ -139,12 +176,16 @@ hr {
     margin-bottom: 45px;
 }
 
+@media screen and (min-width: 1500px) {
 .item-container h2 {
-    font-size: 4vw;
+    font-size: 3vw;
+}
 }
 
+@media screen and (min-width: 1500px) {
 .item-container p {
-    font-size: 2vw;
+    font-size: 1.5vw;
+}
 }
 
 #profile-img {
@@ -157,6 +198,7 @@ hr {
 
 .about-me {
     text-align: left;
+    font-size: 130%;
 }
 
 /* ---------------------------- contact.html ---------------------------- */
@@ -164,6 +206,7 @@ hr {
 
 .contact-me {
     text-align: left;
+    font-size: 130%;
 }
 
 /* ---------------------------- portfolio.html ---------------------------- */
@@ -196,6 +239,10 @@ hr {
 
 .project-content {
     padding: 20px;
+}
+
+.project-content p {
+    font-size: 130%;
 }
 
 .lead {

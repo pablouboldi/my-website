@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 6vw;
     margin: 0px auto 0px auto;
     font-family: Quicksand, sans-serif;
 }
@@ -20,6 +20,14 @@ h2 {
 h3 {
     color: #11999E;
     font-family: Montserrat, sans-serif;
+}
+
+blockquote p{
+    font-size: 2vw;
+}
+
+.blockquote-footer{
+    font-size: 1.5vw;
 }
 
 p {
@@ -54,8 +62,9 @@ hr {
     background-color: #DAEAF1;
 }
 
-.navbar-brand {
-    color: #576F72;
+.navbar-brand img{
+    width: 30px;
+    height: 30px;
 }
 
 .navbar-brand:hover {
@@ -81,7 +90,7 @@ hr {
 #header {
     position: relative;
     overflow: hidden;
-    padding: 20% 3% 20%;
+    padding: 20% 3% 15%;
 }
 
 #header h1{
@@ -125,6 +134,10 @@ hr {
 .main-container img {
     width: 150px;
     margin-bottom: 50px;
+}
+
+.item-container {
+    margin-bottom: 45px;
 }
 
 #profile-img {

@@ -37,6 +37,3 @@ def thanks():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-# TODO 1: Ver si conviene agregar mas cosas en las distintas paginas porque se ve muy corta en un celular
-# TODO 2: Agregar información en la pagina "about"

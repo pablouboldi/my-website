@@ -16,7 +16,7 @@ def home():
 @app.route('/portfolio', methods=["GET", "POST"])
 def portfolio():
     return render_template(
-        'portfolio_v2.html'
+        'portfolio.html'
     )
 
 

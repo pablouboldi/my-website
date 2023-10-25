@@ -36,7 +36,5 @@ def thanks():
     return render_template("thanks.html")
 
 
-# if __name__ == "__main__":
-#     app.run(debug=False)
-
-app.run(debug=False)
+if __name__ == "__main__":
+    app.run(debug=False)

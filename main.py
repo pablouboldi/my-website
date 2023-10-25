@@ -3,7 +3,6 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"  # os.environ.get("SECRET_KEY")
-app.run(port=8080)
 Bootstrap(app)
 
 
@@ -37,4 +36,4 @@ def thanks():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)

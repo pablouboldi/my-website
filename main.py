@@ -3,6 +3,7 @@ from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b"  # os.environ.get("SECRET_KEY")
+app.run(port=8080)
 Bootstrap(app)
 
 
